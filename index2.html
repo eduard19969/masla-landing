@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оливи та мастила для будь-якої техніки</title>
+    <style>
+        /* Базові налаштування */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Головний екран */
+        .hero {
+            /* Сюди можна додати завантажену картинку фоном */
+            background-color: #2c3e50; 
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #f1c40f;
+        }
+        
+        /* Кнопка дзвінка */
+        .btn-call {
+            display: inline-block;
+            background-color: #f1c40f;
+            color: #1a252f;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .btn-call:hover {
+            background-color: #d4ac0d;
+            transform: translateY(-2px);
+        }
+
+        /* Основний контент */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .content h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        ul.benefits {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.benefits li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            padding-left: 30px;
+            position: relative;
+        }
+        ul.benefits li::before {
+            content: "✔️";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Банер перебивка */
+        .banner {
+            background: #f1c40f;
+            color: #1a252f;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+
+        /* Футер */
+        .footer {
+            background-color: #1a252f;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .footer h2 {
+            color: #f1c40f;
+            margin-bottom: 30px;
+        }
+        .footer-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        .footer-list li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Будь-які оливи та мастила<br>для будь-яких цілей!</h1>
+        <p style="font-size: 1.2em;">Гарантуємо найкращі ціни!</p>
+        
+        <a href="tel:+380935316041" class="btn-call">📞 093 531 60 41<br><span style="font-size: 0.8em; font-weight: normal;">Телефонуйте просто зараз!</span></a>
+    </header>
+
+    <main class="content">
+        <h2>Оливи та мастила, які вам потрібні:</h2>
+        <ul class="benefits">
+            <li><strong>Будь-якого типу:</strong> моторні, трансмісійні, гідравлічні, індустріальні, трансформаторні тощо.</li>
+            <li><strong>Для будь-якої техніки:</strong> вантажівок, спецтехніки, верстатів, компресорів, трансформаторів, промислового обладнання.</li>
+            <li><strong>Будь-якого бренду:</strong> MANNOL, Mobil, Shell, Total, Castrol, Liqui Moly, Statoil та інші.</li>
+        </ul>
+
+        <div class="banner">
+            Швидка доставка по Україні / Оптові ціни та гнучкі знижки
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h2>Зателефонуйте та отримайте найкращу оливу для своєї техніки!</h2>
+        <a href="tel:+380935316041" class="btn-call">📞 093 531 60 41<br><span style="font-size: 0.8em; font-weight: normal;">Телефонуйте просто зараз!</span></a>
+        
+        <ul class="footer-list">
+            <li>✔️ Будь-які оливи та мастила</li>
+            <li>✔️ Для вантажівок, спецтехніки, компресорів, трансформаторів</li>
+            <li>✔️ Оптимальні ціни та швидка доставка</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
