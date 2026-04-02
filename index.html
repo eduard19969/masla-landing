@@ -11,10 +11,10 @@
             margin: 0;
             padding: 0;
             /* Основна частина для фону */
-            background-image: url('background-masla.png'); /* Путь к вашей картинке */
+            background-image: url('background-masla-optimized.png'); /* Путь к новой картинке */
             background-size: cover; /* Картинка растягивается на весь экран */
             background-position: center; /* Центрируется */
-            background-attachment: fixed; /* Не прокручивается при скролле (фиксированный фон) */
+            background-attachment: fixed; /* Не прокручивается при скролле */
             color: #ffffff; /* Белый текст для контраста */
             line-height: 1.6;
         }
@@ -69,9 +69,10 @@
             max-width: 800px;
             margin: 0 auto 60px auto;
             padding: 40px;
-            background: rgba(255, 255, 255, 0.1); /* Легкий прозорий фон для контенту */
+            /* Теперь мы используем легкий фон, который идеально сочетается с чистым центром картинки */
+            background: rgba(255, 255, 255, 0.05); 
             border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         .content h2 {
             text-align: center;
@@ -133,12 +134,19 @@
         }
         .footer-list li { margin-bottom: 8px; }
         
-        /* Мобильная адаптация */
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 2.2em; }
-            .content { padding: 20px; }
-            ul.benefits li { font-size: 1em; }
-            .banner { font-size: 1.1em; }
+        /* Мобильная адаптация (КРИТИЧЕСКИ ВАЖНО) */
+        @media (max-width: 768px) {
+            .hero { padding: 60px 15px; } /* Уменьшаем отступы */
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1.1em; }
+            
+            .content { padding: 20px; margin-bottom: 40px; }
+            ul.benefits li { font-size: 1em; padding-left: 25px; }
+            
+            .banner { font-size: 1.1em; padding: 15px; }
+            
+            .footer { padding: 50px 15px; }
+            .footer h2 { font-size: 1.8em; }
             .footer-list { flex-direction: column; gap: 5px;}
         }
     </style>
